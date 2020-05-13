@@ -1,0 +1,39 @@
+<script> 
+    function demo() {
+      var data1;
+  $.ajax({ 
+   type: "POST", 
+   data: data1, 
+   url: "http://localhost/rekha/essence-free-opl/ajax/css.php", 
+     success: function (result) { 
+     //$('p').css('background-color',result);
+      $("p").css("background-color", "yellow");
+     alert(result);
+   } 
+});
+
+  }
+  </script>
+<script type="text/javascript">
+
+    $( document ).ready(function() {
+        console.log( "document loaded" );
+        demo();
+    });
+ 
+       </script>
+
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">     </script>
+
+
+
+ $(function() {
+            var colors = ["#0099cc","#c0c0c0","#587b2e","#990000","#000000","#1C8200","#987baa","#981890","#AA8971","#1987FC","#99081E"];
+
+            setInterval(function() { 
+                var bodybgarrayno = Math.floor(Math.random() * colors.length);
+                var selectedcolor = colors[bodybgarrayno];
+                $("body").css("background",selectedcolor);
+            }, 3000);
+        })

@@ -1,0 +1,115 @@
+var len = result.length;
+            for(var i=0; i<len; i++){
+                var id = result[i].id;
+                var username = result[i].img_name;
+                var name = result[i].url;
+                var email = result[i].status;
+
+                var tr_str = "<tr>" +
+                    "<td align='center'>" + (i+1) + "</td>" +
+                    "<td align='center'>" + username + "</td>" +
+                    "<td align='center'>" + name + "</td>" +
+                    "<td align='center'>" + email + "</td>" +
+                    "</tr>";
+
+                $("#userTable tbody").append(tr_str);
+            }
+<table id="userTable" border="1" >
+      <thead>
+        <tr>
+          <th width="5%">S.no</th>
+          <th width="20%">img_name</th>
+          <th width="20%">url</th>
+          <th width="30%">status</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+   </table>
+=======================================
+var response = [{
+    "Id":"1",
+    "StreetAddress": "xxx",
+    "Place":"yyy"
+},
+{
+    "Id":"2",
+    "StreetAddress": "xxx2",
+    "Place":"yyy2"
+},
+{
+    "Id":"3",
+    "StreetAddress": "xxx3",
+    "Place":"yyy3"
+}
+]
+console.log(response);
+//you'll get an object: [Object { Id="1", StreetAddress="xxx", Place="yyy"}, Object { Id="2", StreetAddress="xxx2", Place="yyy2"}, Object { Id="3", StreetAddress="xxx3", Place="yyy3"}]
+//iterate over
+for(var x=0; x < response.length; x++){
+    console.log("ID: " + response[x].Id + " StreetAddress: " + response[x].StreetAddress + " Place: " + response[x].Place);
+}
+================
+for (i = 0; i < img.length; i++) {
+		
+		$('#del').src(img[i]['url']);
+		
+	
+		 
+		}
+==================
+"http://localhost/rekha/ws/images/f3.jpg"
+UPDATE `tab1` SET `url`="http://localhost/rekha/ws/images/f3.jpg" where id=1;
+=========================================
+
+work assigned date => 28/3/2020 [saturday]
+work Complete date => 30/3/2020 [Monday]
+
+upload in image floder 
+Steps/Work flow:
+	1. End user clicks Add images link
+	2. Selects and Uploads image file  from his/her local machine
+	3. 'add_image.php' file should takes the image file and uploads to 'http://..../rekha/ws/images' folder
+	4. 'add_image.php' should make an entry of img url in the tab1 table using below sql update query
+
+		insert into tab1 (img_name,url) values('img2',$upload_img_url);
+        5. 
+           php - coding 
+==================
+<form  action="upload.php" method="POST">
+  <input type="file" name="ff" accept=".jpg, .jpeg, .png">
+<input type="submit">
+</form>
+$uploaddir = 'http://localhost/rekha/ws/images/';
+$uploadfile = $uploaddir . basename($_FILES['userfile']['name']);
+
+echo "<p>";
+
+if (move_uploaded_file($_FILES['userfile']['tmp_name'], $uploadfile)) {
+  echo "File is valid, and was successfully uploaded.\n";
+} else {
+   echo "Upload failed";
+}
+
+echo "</p>";
+echo '<pre>';
+echo 'Here is some more debugging info:';
+print_r($_FILES);
+print "</pre>";
+
+?> 
+==========================
+  dont repeat
+
+Demo1 - Index
+Demo2  - Add Image
+Demo3 - Already Existing
+Demo4 - thankyou
+
+==================================
+Monday 
+   https://www.codexworld.com/build-crud-datagrid-with-jquery-easyui-using-php-mysql/
+ 
+to refer this curd prg..
+====================================
+
+

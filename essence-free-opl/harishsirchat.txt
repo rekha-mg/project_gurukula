@@ -1,0 +1,15 @@
+id    |     img_name     |   url    |   status 
+11    |    philips       |  c:///   |      1
+
+
+php should using 
+
+js 
+
+json encode($rows)
+
+
+
+ajax .....
+
+msbi  --- 
