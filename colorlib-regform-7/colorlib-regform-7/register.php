@@ -36,7 +36,7 @@ $sqll="INSERT INTO user(Name,Email_id,Password) VALUES ('$usnm','$eml','$pswd1')
 if(mysqli_query($link,$sqll))
 {
 echo  "Records inserted successfully";
-header("Location:http://localhost/rekha/WebSite/index.php");
+header("Location:http://localhost/e_class_php_project/WebSite/index.php");
 }
 else
 {

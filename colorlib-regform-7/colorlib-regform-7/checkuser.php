@@ -34,8 +34,8 @@ else
 		$name=$row[0];
 		$_SESSION["name"]=$name;
 	     //echo json_encode($name);
-	   header("Location:http://localhost/rekha/WebSite/userlgn.php");
-	   //header("Location:http://localhost/rekha/WebSite/dest.php");
+	   header("Location:http://localhost/e_class_php_project/WebSite/userlgn.php");
+	   //header("Location:http://localhost/e_class_php_project/WebSite/dest.php");
 }
 }
 else

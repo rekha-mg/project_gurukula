@@ -21,7 +21,7 @@
   $.ajax({ 
    type: "POST", 
    data: data1, 
-   url: "http://localhost/rekha/essence-free-opl/ajax/css - Copy.php", 
+   url: "http://localhost/e_class_php_project/essence-free-opl/ajax/css - Copy.php", 
      success: function (result) { 
      	var imgg = jQuery.parseJSON(result);
      //$('p').css('background-color',result);
@@ -106,7 +106,7 @@ else
 					if(mysqli_query($link,$sqll))
 					{
 						echo  "Records inserted successfully";
-						//header("Location:http://localhost/rekha/WebSite/userlng.php");
+						//header("Location:http://localhost/e_class_php_project/WebSite/userlng.php");
 					}
 					else
 					{
@@ -158,7 +158,7 @@ echo $eml;
 							<a class="nav-link" href="#testimonial">Testimonial</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="http://localhost/rekha/WebSite/index.html">Logout</a>
+							<a class="nav-link" href="http://localhost/e_class_php_project/WebSite/index.html">Logout</a>
 						</li>
 						<li class="nav-item">
 						<a class="nav-link btn btn-success" href="#contact"><?php  echo "Welcome ".$name;  ?></a>

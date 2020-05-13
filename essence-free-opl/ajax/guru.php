@@ -7,15 +7,15 @@
 var myArray = [
   {
     "display": "JavaScript Tutorial",
-    "url": "http://localhost/rekha/ws/images/f3.jpg"
+    "url": "http://localhost/e_class_php_project/ws/images/f3.jpg"
   },
   {
     "display": "HTML Tutorial",
-    "url": "http://localhost/rekha/ws/images/f3.jpg"
+    "url": "http://localhost/e_class_php_project/ws/images/f3.jpg"
   },
   {
     "display": "CSS Tutorial",
-    "url": "http://localhost/rekha/ws/images/f3.jpg"
+    "url": "http://localhost/e_class_php_project/ws/images/f3.jpg"
   }
 ];
 

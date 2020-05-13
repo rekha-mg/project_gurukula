@@ -57,8 +57,8 @@ for (i = 0; i < img.length; i++) {
 		 
 		}
 ==================
-"http://localhost/rekha/ws/images/f3.jpg"
-UPDATE `tab1` SET `url`="http://localhost/rekha/ws/images/f3.jpg" where id=1;
+"http://localhost/e_class_php_project/ws/images/f3.jpg"
+UPDATE `tab1` SET `url`="http://localhost/e_class_php_project/ws/images/f3.jpg" where id=1;
 =========================================
 
 work assigned date => 28/3/2020 [saturday]
@@ -68,7 +68,7 @@ upload in image floder
 Steps/Work flow:
 	1. End user clicks Add images link
 	2. Selects and Uploads image file  from his/her local machine
-	3. 'add_image.php' file should takes the image file and uploads to 'http://..../rekha/ws/images' folder
+	3. 'add_image.php' file should takes the image file and uploads to 'http://..../e_class_php_project/ws/images' folder
 	4. 'add_image.php' should make an entry of img url in the tab1 table using below sql update query
 
 		insert into tab1 (img_name,url) values('img2',$upload_img_url);
@@ -79,7 +79,7 @@ Steps/Work flow:
   <input type="file" name="ff" accept=".jpg, .jpeg, .png">
 <input type="submit">
 </form>
-$uploaddir = 'http://localhost/rekha/ws/images/';
+$uploaddir = 'http://localhost/e_class_php_project/ws/images/';
 $uploadfile = $uploaddir . basename($_FILES['userfile']['name']);
 
 echo "<p>";

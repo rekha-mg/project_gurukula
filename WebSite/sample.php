@@ -22,7 +22,7 @@ echo "Welcome " .$_SESSION["name"];
   $.ajax({ 
    type: "POST", 
    data: data1, 
-   url: "http://localhost/rekha/essence-free-opl/ajax/css - Copy.php", 
+   url: "http://localhost/e_class_php_project/essence-free-opl/ajax/css - Copy.php", 
      success: function (result) { 
      	var imgg = jQuery.parseJSON(result);
      //$('p').css('background-color',result);

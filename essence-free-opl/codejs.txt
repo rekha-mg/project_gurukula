@@ -4,7 +4,7 @@
   $.ajax({ 
    type: "POST", 
    data: data1, 
-   url: "http://localhost/rekha/essence-free-opl/ajax/css.php", 
+   url: "http://localhost/e_class_php_project/essence-free-opl/ajax/css.php", 
      success: function (result) { 
      //$('p').css('background-color',result);
       $("p").css("background-color", "yellow");
