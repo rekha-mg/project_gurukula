@@ -1,64 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Gurulula</title>
-    <!-- plugins:css -->
-    <link rel="stylesheet" href="../../../assets/vendors/iconfonts/mdi/css/materialdesignicons.min.css">
-    <link rel="stylesheet" href="../../../assets/vendors/iconfonts/ionicons/css/ionicons.css">
-    <link rel="stylesheet" href="../../../assets/vendors/iconfonts/typicons/src/font/typicons.css">
-    <link rel="stylesheet" href="../../../assets/vendors/iconfonts/flag-icon-css/css/flag-icon.min.css">
-    <link rel="stylesheet" href="../../../assets/vendors/css/vendor.bundle.base.css">
-    <link rel="stylesheet" href="../../../assets/vendors/css/vendor.bundle.addons.css">
-     
-    <!-- endinject -->
-    <!-- plugin css for this page -->
-    <link rel="stylesheet" href="../../../assets/vendors/icheck/skins/all.css">
-    <!-- End plugin css for this page -->
-    <!-- inject:css -->
-    <link rel="stylesheet" href="../../../assets/css/shared/style.css">
-    <!-- endinject -->
-    <!-- Layout styles -->
-    <link rel="stylesheet" href="../../../assets/css/demo_1/style.css">
-    <!-- End Layout styles -->
-    <link rel="shortcut icon" href="../../../assets/images/favicon2.png" />
-    
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Gurulula</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="../../../assets/vendors/iconfonts/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="../../../assets/vendors/iconfonts/ionicons/css/ionicons.css">
+  <link rel="stylesheet" href="../../../assets/vendors/iconfonts/typicons/src/font/typicons.css">
+  <link rel="stylesheet" href="../../../assets/vendors/iconfonts/flag-icon-css/css/flag-icon.min.css">
+  <link rel="stylesheet" href="../../../assets/vendors/css/vendor.bundle.base.css">
+  <link rel="stylesheet" href="../../../assets/vendors/css/vendor.bundle.addons.css">
   
+  <!-- endinject -->
+  <!-- plugin css for this page -->
+  <link rel="stylesheet" href="../../../assets/vendors/icheck/skins/all.css">
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="../../../assets/css/shared/style.css">
+  <!-- endinject -->
+  <!-- Layout styles -->
+  <link rel="stylesheet" href="../../../assets/css/demo_1/style.css">
+  <!-- End Layout styles -->
+  <link rel="shortcut icon" href="../../../assets/images/favicon2.png" />
   
-  <script type="text/javascript">
-   
-      // Form validation code will come here.
-      function validate()
-      {
-      
-         if( document.form.my_file.value == "" )
-         {
-            alert( "Please select file" );
-            document.form.my_file.focus();
-            return false;
-         }
-
-       }
-function go_to_dashboard()
-         {
-          window.location.href="http://localhost/e_class_php_project/webApp/src/demo_1/index_orig.html";
-         }
-     </script>
-
-  </head>
-  <body>
-    <div class="container-scroller">
-      <!-- partial:../../partials/_navbar.html -->
-      <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
-        <div class="text-center navbar-brand-wrapper d-flex align-items-top justify-content-center">
-          <a class="navbar-brand brand-logo" href="../../index.html">
+ <script type="text/javascript"> // Form validation code will come here. 
+ function validate() 
+ {    if( document.form.my_file.value == "" )
+ {alert( "Please select file" ); 
+ document.form.my_file.focus(); 
+ return false; } 
+} 
+function go_to_dashboard() 
+{    window.location.href="http://localhost/e_class_php_project/webApp/src/demo_1/index_orig.html";
+} 
+</script>
+</head>
+<body>
+  <div class="container-scroller">
+    <!-- partial:../../partials/_navbar.html -->
+    <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+      <div class="text-center navbar-brand-wrapper d-flex align-items-top justify-content-center">
+        <a class="navbar-brand brand-logo" href="../../index.html">
           <!--  <img src="../../../assets/images/logo.svg" alt="logo" /> </a>-->
           <a class="navbar-brand brand-logo-mini" href="../../index.html">
             <img src="../../../assets/images/logo-mini.svg" alt="logo" /> </a>
-        </div>
-        <div class="navbar-menu-wrapper d-flex align-items-center">
+          </div>
+          <div class="navbar-menu-wrapper d-flex align-items-center">
         <!--  <ul class="navbar-nav">
             <li class="nav-item font-weight-semibold d-none d-lg-block">Help : +050 2992 709</li>
             <li class="nav-item dropdown language-dropdown">
@@ -222,8 +211,8 @@ function go_to_dashboard()
                 <span class="menu-title">Dashboard</span>
               </a>-->
             </li>
-           
-             
+            
+            
             <li class="nav-item">
                    <!--    <a class="nav-link" href="../../pages/forms/basic_elements.html">
                 <i class="menu-icon typcn typcn-shopping-bag"></i>
@@ -281,54 +270,54 @@ function go_to_dashboard()
           <div class="content-wrapper">
             <div class="row">
               
-                 
+             
               <div class="col-12 grid-margin">
                 <div class="card">
                   <div class="card-body">
                     <h4 class="card-title">Add New Image</h4>
-                   
-                      
-                      <p class="card-description">  </p>
-                      <div class="row">
-                        <div class="col">
-                          <div class="form-group row">
-                           <form class="form-sample" name="form" method="post" action="insert-img.php" enctype="multipart/form-data" onsubmit="return(validate());">
-                            <label class="col-sm-3 col-form-label">Select File</label>
-                              <div class="col-sm-9">
-                              <input type="file" name="my_file" />
-                              </div>
-                          </div>
                     
+                    
+                    <p class="card-description">  </p>
+                    <div class="row">
+                      <div class="col">
+                        <div class="form-group row">
+                         <form class="form-sample" name="form" method="post" action="insert-img.php" enctype="multipart/form-data" onsubmit="return(validate());">
+                          <label class="col-sm-3 col-form-label">Select File</label>
+                          <div class="col-sm-9">
+                            <input type="file" name="my_file" />
+                          </div>
+                        </div>
                         
                         
-                    
-                      <div class="row">
-                        <div class="col">
-                          <input type="submit" name="submit" value="Save"/>
-                         
-                        </div>
-                        <div class="col">  
-                          <input type="Button" name="btn" onclick="go_to_dashboard();" value="Close" />
-                            </div>
+                        
+                        
+                        <div class="row">
+                          <div class="col">
+                            <input type="submit" name="submit" value="Save"/>
+                            
+                          </div>
+                          <div class="col">  
+                            <input type="Button" name="btn" onclick="go_to_dashboard();" value="Close" />
                           </div>
                         </div>
                       </div>
-                          </form>
-                      
-                      </div>
-                      
-                          </div>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
+                    </div>
+                  </form>
+                  
                 </div>
+                
               </div>
             </div>
           </div>
-          <!-- content-wrapper ends -->
-          <!-- partial:../../partials/_footer.html -->
-          <footer class="footer">
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- content-wrapper ends -->
+<!-- partial:../../partials/_footer.html -->
+<footer class="footer">
            <!-- <div class="container-fluid clearfix">
               <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © 2019 <a href="http://www.bootstrapdash.com/" target="_blank">Bootstrapdash</a>. All rights reserved.</span>
               <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Hand-crafted & made with <i class="mdi mdi-heart text-danger"></i>
@@ -355,4 +344,4 @@ function go_to_dashboard()
     <!-- Custom js for this page-->
     <!-- End custom js for this page-->
   </body>
-</html>
+  </html>

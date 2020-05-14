@@ -22,49 +22,46 @@
     <link rel="stylesheet" href="../../../assets/css/demo_1/style.css">
     <!-- End Layout styles -->
     <link rel="shortcut icon" href="../../../assets/images/favicon2.png" />
-<script type="text/javascript">
-   <!--
+    <script type="text/javascript">
+     <!--
       // Form validation code will come here.
       function validate()
       {
-      
-         if( document.form.my_file.value == "" )
-         {
-            alert( "Please select file" );
-            document.form.my_file.focus();
-            return false;
-         }
-       }
-         function del_img()
-         {
-          var path=document.getElementById('blah').src;
-          
-         }
-         //
-         //http://localhost/e_class_php_project/webApp_2/
 
-         function go_to_dashboard()
-         {
-          window.location.href="http://localhost/e_class_php_project/webApp/src/demo_1/index_orig.html";
-         }
-     </script>
+       if( document.form.my_file.value == "" )
+       {
+        alert( "Please select file" );
+        document.form.my_file.focus();
+        return false;
+      }
+    }
+    function del_img()
+    {
+      var path=document.getElementById('blah').src;
 
-       <script type="text/javascript">
-    function readURL(input) {
-            if (input.files && input.files[0]) {
-                var reader = new FileReader();
+    }
+    function go_to_dashboard()
+    {
+    window.location.href="http://localhost/e_class_php_project/webApp/src/demo_1/index_orig.html";
+    }
+  </script>
 
-                reader.onload = function (e) {
-                    $('#blah')
-                        .attr('src', e.target.result)
-                        .width(60)
-                        .height(60);
-                };
-                 ;
-                reader.readAsDataURL(input.files[0]);
-            }
+      <script type="text/javascript">
+        function readURL(input) {
+          if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+              $('#blah')
+              .attr('src', e.target.result)
+              .width(60)
+              .height(60);
+            };
+            ;
+            reader.readAsDataURL(input.files[0]);
+          }
         }
-   </script>
+      </script>
 
 
   </head>
