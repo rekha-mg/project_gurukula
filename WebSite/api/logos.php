@@ -14,6 +14,7 @@ while($row=mysqli_fetch_assoc($result))
 {
 	$json_array[]=$row;
 }
+header('Content-Type: application/json');
 echo json_encode($json_array);
 }
 ?>

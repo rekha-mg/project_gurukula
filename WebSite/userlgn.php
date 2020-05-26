@@ -21,8 +21,8 @@
 			$.ajax({ 
 				type: "POST", 
 				data: data1, 
-				url: "http://localhost/e_class_php_project/WebSite/ajax/cssdata.php",  
-				success: function (result) { 
+				url: "http://localhost/e_class_php_project/WebSite/api/logos.php",  
+							success: function (result) { 
 					var imgg = jQuery.parseJSON(result);
 		//$('p').css('background-color',result);
 		//$("p").css("background-color", "yellow");

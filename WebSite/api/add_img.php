@@ -1,14 +1,5 @@
 <?php
 /*https://www.allphptricks.com/upload-file-using-php-save-directory/-codecopy      */
-$entityBody = file_get_contents('php://input');
-  $requestObject=json_decode($entityBody,true);
-  header('Content-Type: application/json');
- // store request object to database...
-
-  //echo json_encode($requestObject["username"]);
-  //echo json_encode($requestObject["name"]);
- 
-$id=$requestObject["id"];
 
 $link=mysqli_connect("localhost","root","","tutor");
 
@@ -18,17 +9,15 @@ if($link==false)
 }
 
 
-//if (($_FILES['my_file']['name']!=""))
-//{
+if (($_FILES['my_file']['name']!=""))
+{
 // Where the file is going to be stored
 $target_dir = "C:/xampp/htdocs/e_class_php_project/WebSite/images/";
-//$file = $_FILES['my_file']['name'];
-
-//$path = pathinfo($file);
-
+$file = $_FILES['my_file']['name'];
+$path = pathinfo($file);
 $filename = $path['filename'];
 $ext = $path['extension'];
-//$temp_name = $_FILES['my_file']['tmp_name'];
+$temp_name = $_FILES['my_file']['tmp_name'];
 $path_db="";
       if(unlink("c:/users/e_class_php_project/Pictures/saved pictures/"."$file"))
       {
