@@ -11,7 +11,7 @@ $entityBody = file_get_contents('php://input');
 $fn=$requestObject["img_name"];
 echo json_encode($requestObject["id"]);
 echo json_encode($requestObject["url"]);
-
+ // cant understand.. how to get copy of img here
 /*$link=mysqli_connect("localhost","root","","tutor");
 
 if($link==false)
