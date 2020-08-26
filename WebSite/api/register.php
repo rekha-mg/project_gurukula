@@ -24,7 +24,7 @@ $link=mysqli_connect("localhost","root","","tutor");
 		}	*/
 
 		$sql="SELECT * FROM user WHERE Email_id='$id' ";
-
+//check validation
 
 
 		if($res=mysqli_query($link,$sql))

@@ -28,6 +28,6 @@ $sql="select * from user ";
 $page_result3 = mysqli_query($connect, $sql);  
 $total_u = mysqli_num_rows($page_result3);  
 $myArr = array($total_v,$total_l,$total_u);
-
+http_response_code(201);
 echo json_encode($myArr);
 ?>
